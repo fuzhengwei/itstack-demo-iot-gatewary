@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package org.itstack.demo.iot.gateway.protobuf;
+
+option java_package = "org.itstack.demo.iot.gateway.protobuf";
+option java_multiple_files = true;
+option java_outer_classname = "MasterMessage";
+
+message Message {
+	string ip = 2;
+	string port = 3;
+	string protocolId = 4;
+	string content = 5;
+	string property = 6;
+}
